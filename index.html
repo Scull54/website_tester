@@ -11,6 +11,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 
 <body>
@@ -19,18 +21,18 @@
         <div class="main-container">
             <div class="greeting-wrapper">
                 <h1 class="greeting-text">Welcome!</h1> 
-                <!-- <img class="greeting-pic" src="images/website_greeting_pic.jpg">  -->
             </div>
 
+<!-- you may want to relook at this -->
             <div class="intro-wrapper">
                 <div class="nav-wrapper">
                     <div class="dot-wrapper">
-                        <div id="dot-1" class="browser-dot"></div>
-                        <div id="dot-2" class="browser-dot"></div>
-                        <div id="dot-3" class="browser-dot"></div>
+                        <div id="dot-1" class="theme-dot"></div>
+                        <div id="dot-2" class="theme-dot"></div>
+                        <div id="dot-3" class="theme-dot"></div>
                     </div>
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="post.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="left-column">
@@ -38,10 +40,10 @@
                     <h5 style="text-align: center; line-height: 0;">Personalized Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">*theme settings will be saved for <br>your next visit</p>
@@ -54,8 +56,9 @@
                         <div id="preview">
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
-                            <h3>What I Do</h3>
-                            <p>Fill in later</p>
+                            <h3>Sean Scull</h3>
+                            <p>Self motivated, knowledge seeking, hard working individual. Looking for the right opportunity to take my creative, passionate, fun loving self to the next level.
+                            </p>
                             <div id="corner-br" class="corner"></div>
                             <div id="corner-bl" class="corner"></div>
                         </div>
@@ -83,7 +86,7 @@
                         <P>Fullstack Developer and Solutions Arichtect
                     <br>
                     <br>
-                            <a target="_blank" href="Sean Scull - Resume (1).pdf" class="link-button">
+                            <a target="_blank" href="Sean Scull - Resume.docx (1).pdf" class="link-button">
                                 Download Resume
                             </a>
                         </P>
@@ -137,7 +140,6 @@
                         <a class="link-button" target="_blank" href="https://www.credly.com/badges/50ba4228-98fe-4e8e-8010-1b051679e21b/linked_in_profile">
                             VERIFY
                             </a>    
-                        </button>
                     </div>
                 </div>
              </div>
@@ -159,20 +161,20 @@
                             Family
                             </a> 
 
-                        <p class="hobby-intro">This is a sentence. Remeber to fill later on.</p>
+                        <p class="hobby-intro">My family is what is important. Loving them is all that matters.</p>
                     </div>
 
                 </div>
 
-                <div class="hobbies">
+                <!-- <div class="hobbies">
                     <img class="thumbnail" src="images/football_img.jpg">
                     <div class="hobbies-preview">
                             <a class="link-button" target="_blank" href="">
                                 Football
                                 </a>
-                        <p class="hobby-intro">This is a sentence. Remeber to fill later on.</p>
+                        <p class="hobby-intro">I played in highschool. Now im an advid fanboy.</p>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="hobbies">
                     <img class="thumbnail" src="images/lifting_img.jpg">
@@ -180,17 +182,19 @@
                         <a class="link-button" target="_blank" href="https://www.instagram.com/stories/highlights/17927907877765138/">
                             Weight Lifting</a>
                             <p class="hobby-intro">
-                                This is a sentence. Remeber to fill later on</p>
+                                Deadlift #505
+                                Bench #315
+                                Squat #440</p>
                     </div>
                 </div>
 
                 <div class="hobbies">
                     <img class="thumbnail" src="images/coders_img.jpg">
                     <div class="hobbies-preview">
-                        <a class="link-button" target="_blank" href="">
+                        <a class="link-button" target="_blank" href="https://github.com/scull54">
                             Programming
                             </a>
-                        <p class="hobby-intro">This is a sentence. Remeber to fill later on.</p>
+                        <p class="hobby-intro">Please ignore the minimal amount of projects. I am just get started, BABY!</p>
                     </div>
                 </div>
             </div>
@@ -200,17 +204,28 @@
 
     <section class="s2">
         <div class="main-container">
-            <h3 class="contact-text" style="text-align: center;">Contact</h3>
+            <h3 style="text-align: center;"> Get In Touch</h3>
+            <form id="contact-form">
 
-            <div>
-                
-            </div>
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" type="text" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
 
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 
 </html>
-
-<!-- target="_blank" href="https://www.instagram.com/stories/highlights/17916459745885268/"> -->
